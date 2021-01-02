@@ -52,5 +52,3 @@ for i in name_list:
         print(mail_list[j])
         j+=1
         continue
-#d-5d6869def0534aeeb1f169a05c45c6a6
-#api_key: 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
