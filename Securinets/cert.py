@@ -19,12 +19,12 @@ for i in name_list:
         location = ((3508-w)/2, 1150)
         d.text(location, i, fill = text_color, font = font)
         im.save("certificate_" + i +".pdf")
-        sg = sendgrid.SendGridAPIClient(api_key="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")
+        sg = sendgrid.SendGridAPIClient(api_key="#####REDACTED#####")
         from_email = Email("contact@securinets.com")
         to_email = To(mail_list[j])
         mail = Mail(from_email, to_email)
         mail.dynamic_template_data = {'Name' : i}
-        mail.template_id = "d-5d6869def0534aeeb1f169a05c45c6a6"
+        mail.template_id = "#####REDACTED#####"
         #with open("certificate_" + i +".pdf", 'rb') as sigf:
         #    sig = sigf.read()
         sig = open("certificate_" + i +".pdf", "rb").read()
